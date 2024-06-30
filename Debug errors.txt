@@ -1,0 +1,8 @@
+PostMan
+=======
+request is POST
+
+path should be http://127.0.0.1:8000/api\update_database/
+		check the path here / back slash used
+
+Body --> form-data --> Key like file.xlsx and select file in value
