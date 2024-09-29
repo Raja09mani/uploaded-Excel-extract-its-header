@@ -14,9 +14,10 @@ def update_database(request):
             return Response({"error": "No file provided"}, status=status.HTTP_400_BAD_REQUEST)
         
         # Call the utility function to process the uploaded files
+
         responses = process_uploaded_files(uploaded_files)
-        
-        return JsonResponse({"responses": responses})
+        ls=responses
+        return JsonResponse({"responses": ls})
     
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
