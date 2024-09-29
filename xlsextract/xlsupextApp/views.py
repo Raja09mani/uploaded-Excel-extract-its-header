@@ -9,6 +9,8 @@ def update_database(request):
     try:
         # Ensure the file key matches the form field name ('file' instead of 'file.xlsx')
         print("hi")
+        
+        print("welcome")
         uploaded_files = request.FILES.getlist('file.xlsx')
 
         if not uploaded_files:
